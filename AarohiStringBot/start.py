@@ -12,20 +12,19 @@ async def start(bot: Client, msg: Message):
     me2 = (await bot.get_me()).mention
     await bot.send_message(
         chat_id=msg.chat.id,
-        text=f"""Hᴇʏ {msg.from_user.mention},
+        text=f"""- مرحباً عزيزي {msg.from_user.mention}.
+     
+     - انا بوت لأستخراج جلسات التليثون و البايروجرام .
 
-Tʜɪs ɪs {me2},
-Aɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ, ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ ᴛʜᴇ ʜᴇʟᴩ ᴏғ ᴩʏʀᴏɢʀᴀᴍ.
-
-Mᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ : [ᴀᴀʀᴏʜɪ](tg://user?id={OWNER_ID}) !""",
+- المطور  : [SLiDaR](tg://user?id={OWNER_ID}) .""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="🙄 ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ 🙄", callback_data="generate")
+                    InlineKeyboardButton(text=". اضغط لأستخراج الجلسه .", callback_data="generate")
                 ],
                 [
-                    InlineKeyboardButton("❣️ sᴏᴜʀᴄᴇ ❣️", url="https://t.me/HONEY_SINGH_121"),
-                    InlineKeyboardButton("🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", user_id=OWNER_ID)
+                    InlineKeyboardButton(". 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 .", url="https://t.me/c8_8x"),
+                    InlineKeyboardButton(". 𝖣𝖾𝖵𝖾𝖫𝗈𝖯𝖾𝖱 .", user_id=OWNER_ID)
                 ]
             ]
         ),
