@@ -1,7 +1,7 @@
 {
-  "name": "ᴀᴀʀᴏʜɪ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ",
-  "description": "A Telegram Bot to generate Telethon and Pyrogram String Sessions.",
-  "logo": "https://te.legra.ph/file/08e3fa23bfff81e9e04b1.jpg",
+  "name": "سورس سلايدر",
+  "description": "- بوت استخراج جلسات .",
+  "logo": "https://graph.org/file/fea27a023bd668d0f40b9.jpg",
   "keywords": [
     "telegram",
     "bot",
@@ -10,11 +10,11 @@
   ],
     "env": {
         "BOT_TOKEN": {
-            "description": "Get this value from @BotFather",
+            "description": "- توكن من بوت فازر . @BotFather",
             "required": true
         },  
         "MUST_JOIN": {
-            "description": "Username of a group or channel for which you want to set force sub.(without @)",
+            "description": "- يوزر جروب او قناه الدعم من غير @ .",
             "required": true      
         }, 
         "OWNER_ID": {
