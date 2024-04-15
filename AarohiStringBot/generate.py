@@ -195,7 +195,7 @@ async def cancelled(msg):
         return True
     elif "/skip" in msg.text:
         return False
-    elif msg.text.startswith("/"):  # Bot Commands
+    elif msg.text.startswith("/"):   Bot Commands
         await msg.reply("**» ᴄᴀɴᴄᴇʟʟᴇᴅ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴩʀᴏᴄᴇss !**", quote=True)
         return True
     else:
