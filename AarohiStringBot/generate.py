@@ -183,7 +183,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     except KeyError:
         pass
     await client.disconnect()
-    await " اااااا".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴩʏʀᴏɢʀᴀᴍ"))
+    await bot.send_message(msg.chat.id, "- بص في الرسائل المحفوظه هتلاقي الجلسه . \n\n - ملحوظه متديش الجلسه لحد عشان ممكن يخش حسابك من خلالها . ".format(". تليثون ." if telethon else ". بايروجرام ."))
 
 
 #async def cancelled(msg):
