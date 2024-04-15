@@ -20,7 +20,7 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply_photo(
-                    photo="https://graph.org/file/bcc6c4434ca6b138924e0.jpg", caption=f"- صلي علي نبينا محمد يبرو [الدعم] اشترك في قناه الدعم اولاً . \n ({link})",
+                    photo="https://graph.org/file/bcc6c4434ca6b138924e0.jpg", caption=f"- صلي علي نبينا محمد يبرو .\n\n - الرجاء الاشتراك في قناه الدعم [قناه الدعم]({link})",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
