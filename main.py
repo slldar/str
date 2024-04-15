@@ -16,12 +16,12 @@ app = Client(
     api_hash=config.API_HASH,
     bot_token=config.BOT_TOKEN,
     in_memory=True,
-    plugins=dict(root="AarohiStringBot"),
+    plugins=dict(root="SliDaRStringBot"),
 )
 
 
 if __name__ == "__main__":
-    print("Starting the String Generator Bot...")
+    print("بدء تشغيل بوت استخراج الجلسات...")
     try:
         app.start()
     except (ApiIdInvalid, ApiIdPublishedFlood):
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     except AccessTokenInvalid:
         raise Exception("Your BOT_TOKEN is not valid.")
     uname = app.get_me().username
-    print(f"@{uname} started successfully !")
+    print(f"- @{uname} بدء بنجاح .")
     idle()
     app.stop()
-    print("Bot stopped. Bye !")
+    print("- توقف البوت .")
